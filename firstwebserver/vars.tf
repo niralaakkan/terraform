@@ -3,6 +3,7 @@ variable "AWS_SECRET_KEY" {}
 variable "AWS_REGION" {
   default = "us-east-1"
 }
+
 variable "AMIS" {
   type = "map"
   default = {
@@ -14,5 +15,9 @@ variable "instance_type" {
   default = {
       us-east-1  =  "t2.micro"
   }
+}
+
+variable "KEY_NAME" {
+  default = "public_key"
 }
 
