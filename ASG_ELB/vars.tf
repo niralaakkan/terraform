@@ -19,3 +19,8 @@ variable "instance_type" {
 
 variable "KEY_NAME" {}
 
+variable "server_port" {
+  default = "80"
+}
+
+
