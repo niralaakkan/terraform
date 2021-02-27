@@ -52,6 +52,7 @@ on:
 
 env: 
   working-directory: ./firstwebserver
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   terraform:
     name: 'Terraform'
