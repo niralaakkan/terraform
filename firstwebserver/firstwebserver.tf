@@ -7,7 +7,7 @@ resource "aws_instance" "firstwebserver" {
     instance_type  = "${lookup(var.instance_type, var.AWS_REGION)}"
     vpc_security_group_ids = ["${aws_security_group.webserver.id}"]
     key_name = "${var.KEY_NAME}"
-    tags {
+    tags = {
         Name = "First webserver"
     }
     user_data = <<-EOF
