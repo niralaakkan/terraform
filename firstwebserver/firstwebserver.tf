@@ -1,5 +1,11 @@
+terraform {
+  required_providers {
+    aws = "~> 2.59"
+  }
+}
+
 provider "aws" {
-  region = "${var.AWS_REGION}"
+  region = var.AWS_REGION
 }
 
 resource "aws_instance" "firstwebserver" {
