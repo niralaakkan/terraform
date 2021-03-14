@@ -44,8 +44,8 @@
 
 name: 'Terraform'
 
-on:
-  
+on: workflow_dispatch
+
 env: 
   working-directory: ./firstwebserver
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
