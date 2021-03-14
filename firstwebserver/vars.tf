@@ -15,5 +15,7 @@ variable "instance_type" {
   }
 }
 
-variable "KEY_NAME" {}
+variable "KEY_NAME" {
+  type = string
+}
 
