@@ -4,7 +4,7 @@ terraform {
     organization = "corp-v3"
 
     workspaces {
-      prefix = "firstwebserver-"
+      prefix = "firstwebservers-"
     }
   }
 }
