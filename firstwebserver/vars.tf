@@ -17,5 +17,6 @@ variable "instance_type" {
 
 variable "KEY_NAME" {
   type = string
+  default = "public_key"
 }
 
